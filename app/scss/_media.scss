@@ -1,0 +1,145 @@
+@media (max-width: 1305px){
+    .about,
+    .services,
+    .price{
+        &__info{
+        
+            padding: 40px 55px 50px 40px;
+        }
+    }
+}
+
+@media (max-width: 1065px){
+    .about,
+    .services,
+    .price{
+        grid-template-columns: 1fr;
+        &__info{
+        
+            padding: 140px 200px 50px 65px;
+        }
+    }
+    .about{
+        &__info{
+            grid-row: 1;
+        }
+    }
+    .price{
+        &__info{
+            grid-row: 1;
+        }
+    }
+}
+@media (max-width: 760px){
+    .contacts{
+        &__title{
+            margin-bottom: 30px;
+        }
+        &__social{
+            margin-left: 0px;
+        }
+        &__address{
+            margin-left: 20px;
+        }
+    }
+}
+@media (max-width: 650px){
+    .header{
+        height: 100%;
+        &__inner{
+            margin-bottom: 100px;
+        }
+        &__menu{
+            &-btn{
+                display: block;
+            }
+            ul{
+                display: none;
+                position: absolute;
+                top: 78px;
+                left: 0;
+                right: 0;
+                width: 100%;
+                z-index: 1;
+                background-color: #fff;
+            }
+            li{
+                display: block;
+                text-align: center;
+                border-bottom: 1px solid #000;
+                margin-top: 10px;
+                & + li{
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+            }
+            a{
+                display: block;
+            }
+        }
+    }
+    .about,
+    .services,
+    .price{
+        &__info{
+        
+            padding: 20px;
+            &-title{
+
+            }
+        }
+    }
+}
+@media (max-width: 520px){
+    .header{
+        &__title{
+            h1{
+                font-size: 35px;
+            }
+        }
+    }
+    .about,
+    .services,
+    .price{
+        &__info{
+
+            &-title{
+                margin-bottom: 30px;
+                font-size: 35px;
+                padding-left: 10px;
+            }
+            &-text{
+                font-size: 15px;
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .services{
+        &__info{
+            &-list{
+                li{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .price{
+        &__info{
+            &-form{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (min-width: 650px){
+    .header__menu ul{
+        display: block !important;
+    } 
+}
